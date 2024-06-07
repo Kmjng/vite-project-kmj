@@ -1,8 +1,9 @@
-// vite.config.js
-
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-  root: 'src/assets',
-  // 다른 설정들...
-});
+export default {
+  root: "src",
+  build: {
+      outDir: "../public",
+  },
+  optimizeDeps: {
+    include: ['vite-project-kmj'] // 프로젝트에서 사용하는 패키지 이름을 명시
+  }
+};

@@ -7,8 +7,8 @@
     <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
     <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
 
-    <link rel="icon" type="image/svg+xml" href="/src/assets/img/favicon.svg" />
-    <link rel="stylesheet" href="/src/assets/css/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
     <div id="skip">
@@ -21,12 +21,36 @@
         <a href = '#footer'> 푸터 영역 바로 가기</a>
     </div>
     <!-- // skip -->
-    <header id = 'header'>
-        헤더
+    <header id = 'header' role = 'banner' >
+        <div class = "header__inner">
+            <div class = "header__logo">
+                <h1> <a href="#">KMJng<em> PortFolio</em></a> <!-- PortFolio vite-->
+                </h1>
+            </div>
+            <nav class="header__nav show">
+                <ul>
+                    <li> <a href="#intro"> intro </a></li> <!-- header__inner 꾸밈 받음-->
+                    <li> <a href="#skill"> skill </a></li>
+                    <li> <a href="#site"> site </a></li>
+                    <li> <a href="#port"> portfolio </a></li>
+                    <li> <a href="#contact"> contact </a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <!-- 모바일용 -->
+            <div 
+                class = "header__nav__mobile" id = "headerToggle" 
+                aria-controls = "primary-menu" aria-expanded ="false" 
+                role = "button" tabindex = "0">
+                <span></span>
+            </div>
+            
+        </div>
     </header>
     <!-- // header -->
     
-    <main id = 'main'>
+    <main id = 'main' role = "main">
         <section id = 'intro'>
             소개//
         </section>
@@ -52,11 +76,11 @@
     </main>
     <!-- // main -->
     
-    <footer id = 'footer'>
+    <footer id = 'footer' role = "contentinfo">
         푸터 
     </footer>
     <!-- //footer -->
     
-    <script type="module" src="/src/assets/js/main.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
 </body>
 </html>
