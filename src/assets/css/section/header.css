@@ -10,7 +10,7 @@
     display : flex ;
     align-items : center; /* 위아래 기준 가운데 정렬 */ 
     justify-content : space-between ; 
-    background-color : rgba(144, 238, 144, 0.5) ; 
+    background-color : rgba(144, 238, 144, 0.4) ; 
     backdrop-filter: blur(15px) ;  
     padding : 1rem; /* 위아래 간격 (16px) */ 
 }
