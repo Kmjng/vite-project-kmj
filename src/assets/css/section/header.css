@@ -10,21 +10,37 @@
     display : flex ;
     align-items : center; /* 위아래 기준 가운데 정렬 */ 
     justify-content : space-between ; 
-    background-color : rgba(144, 238, 144, 0.4) ; 
-    backdrop-filter: blur(15px) ;  
+    background-color: rgba(116, 99, 99, 1);
+    backdrop-filter: blur(15px);
     padding : 1rem; /* 위아래 간격 (16px) */ 
+    
+    
 }
 .header__logo {
     /* font-size: 25px;  KMJng vite */ 
     font-size : 1.2rem; 
     text-align : center ; 
     line-height : 1;
+    color: white; 
+
 }
 .header__logo em{
     font-size: 15px; /* KMJng vite */ 
     display: block; 
-    color : var(--black200) ; 
+    color : white ; 
 }
+h1 {
+    font-weight: 600;
+}
+
+.header__logo h1 em {
+    font-weight: normal; /* em 태그를 보통 두께로 설정 */
+    font-style: italic;  /* 이탤릭체 적용 */
+    margin-top: 5px;
+    
+}
+
+
 
 .header__nav li {
     display: inline ; /* 한줄로? */
@@ -97,15 +113,15 @@
         display: block ; 
     }
     .header__nav.show ul { /* show는 클래스명 */ 
-        display: block ; 
-        position : absolute; 
-        right : 0 ; 
-        top : 68px; 
-        background-color :  rgba(144, 238, 144, 0.2) ;
-        backdrop-filter : blur(15px) ;
-        z-index : 10000;  
-        min-width: 2000 px; 
-        padding : 20px 0 ; 
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 68px;
+        background-color: rgba(116,99,99,1);
+        backdrop-filter: blur(15px);
+        z-index: 10000;
+        min-width: 150px;
+        padding: 20px 0;
     }
     .header__nav.show li { 
         display: block ; 
