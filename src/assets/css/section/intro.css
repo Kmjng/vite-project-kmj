@@ -1,5 +1,5 @@
 #intro {
-    height: 100vh;
+    height: 70vh;
 }
 .intro__inner {
     width: 100%;
@@ -11,7 +11,7 @@
     padding: 16px;
 }
 .intro__title {
-    font-size: 10vw;
+    font-size: 5vw;
     text-transform: uppercase;
     line-height: 1;
     font-weight: 800;
@@ -20,110 +20,104 @@
     letter-spacing: -0.3vw;
 }
 .intro__text {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     height: 40vh;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--subBg100); /* 배경 색 */ 
+    padding: 20px; /* 내부 여백 설정 */
+    color: var(--black); /* 글꼴 색 */ 
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: flex-start; /* 가운데 정렬 */ 
+    justify-content: center; 
     flex-direction: column;
     position: relative;
+    font-family: var(--mainNoto-font);
 }
+
+
 .intro__text .text {
-    font-size: 3vw;
+    float : right ;
+    
+    font-size: 2.4vw;
     line-height: 1;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-align: center;
-    position: relative;
+    font-weight: 700;
+    
+
+    margin-left: auto; /* 위치 */
+    margin-right: 30px; /* 위치 (왼쪽으로 20px만큼 이동)  */
+    
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    
     z-index: 100;
     transition: all 0.3s;
-    cursor: all-scroll;
+    
 }
+.intro__text .text div {
+    line-height: 1.5; /* 텍스트 간격을 조절할 값 */
+}
+
+
 .intro__text .img {
+    float : left ; /* 이미지를 왼쪽으로 띄움*/ 
     position: absolute;
-    left: 50%;
+    left: 15%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
     width: 30vh;
     height: 30vh;
-    border-radius: 50%;
-    overflow: hidden;
-    filter: grayscale(100%);
+
+    border-radius: 60%;
+    overflow: hidden; 
+    
     transition: all 0.3s;
 }
+/* 마우스 커서 효과 */ 
 .intro__text:hover .text {
     opacity: 0;
 }
 .intro__text:hover .img {
     filter: grayscale(0);
 }
-.intro_lines {
-    width: 100%;
+
+
+/* 커서 올리면 보이는 텍스트 */ 
+.intro__text .additional-text {
+    display: none; /* 일단 숨김 */
+    
+    float: right;
+    
+    font-size: 2vw;
+    line-height: 1;
+    font-weight: 700;
+
+    margin-left: auto; /* 위치 */
+    margin-right: 30px; /* 위치 (왼쪽으로 30px만큼 이동) */
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10% ;
+    
+    z-index: 100;
+    transition: all 0.3s;
+    
 }
-.intro_lines .line {
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: var(--black);
-    margin-bottom: 0.5vw;
+.intro__text .additional-text {
+    line-height: 1.5; /* 텍스트 간격을 조절할 값 */
 }
-.intro_lines.bottom .line {
-    margin-top: 0.5vw;
-    margin-bottom: 0;
-    display: none;
+
+
+.intro__text:hover .additional-text {
+    display: block; /* 마우스를 올렸을 때 보이도록 함 */
 }
-.intro_lines .line:nth-child(1){
-    height: 1px;
-}
-.intro_lines .line:nth-child(2){
-    height: 2px;
-}
-.intro_lines .line:nth-child(3){
-    height: 5px;
-}
-.intro_lines .line:nth-child(4){
-    height: 9px;
-}
-.intro_lines .line:nth-child(5){
-    height: 13px;
-}
-.intro_lines .line:nth-child(6){
-    height: 17px;
-}
-.intro_lines .line:nth-child(7){
-    height: 25px;
-}
-.intro_lines.bottom .line:nth-child(1){
-    height: 25px;
-}
-.intro_lines.bottom .line:nth-child(2){
-    height: 17px;
-}
-.intro_lines.bottom .line:nth-child(3){
-    height: 13px;
-}
-.intro_lines.bottom .line:nth-child(4){
-    height: 9px;
-}
-.intro_lines.bottom .line:nth-child(5){
-    height: 5px;
-}
-.intro_lines.bottom .line:nth-child(6){
-    height: 2px;
-}
-.intro_lines.bottom .line:nth-child(7){
-    height: 1px;
-}
+
 
 @media (max-width: 800px){
     .intro__inner {
         justify-content: center;
-    }
-    .intro_lines.bottom .line {
-        display: block;
     }
     .intro__text .text {
         font-size: 24px;
@@ -133,4 +127,20 @@
     .intro__title {
         display: none;
     }
+}
+
+
+
+.img-comma {
+    display: none; /* 일단 숨김 */
+    width: 150px; /* 원하는 너비 */
+    height: 150px; /* 원하는 높이 */
+    position: absolute; /* 위치를 조절하기 위해 절대 위치 설정 */
+    top: 30px; /* 원하는 상단 여백 */
+    right: 40px; /* 원하는 우측 여백 */
+    transform: scale(0.5); /* 크기 조절 */
+}
+
+.intro__text:hover .img-comma {
+    display: block; /* 마우스를 올렸을 때 보이도록 함 */
 }

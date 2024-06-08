@@ -1,3 +1,68 @@
-#skill{
-    
+.skill__inner {
+    padding: 16px; /* 내부 콘텐츠와 경계(여기서는 안쪽 여백) 사이의 공간을 설정*/
+    display: flex;
+    justify-content: space-between;
+}
+.skill__title {
+    position: sticky;
+    top: 70px;
+    left: 0; /* 왼쪽 */ 
+    width: 30%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+    margin-bottom: 10px;
+}
+.skill__title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+.skill__desc {
+    width: 60%;
+}
+.skill__desc span {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: var(--mainNoto-font);
+
+}
+
+
+.skill__desc h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 1vw;
+}
+.skill__desc h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 2vw;
+}
+.skill__desc p {
+    margin-bottom: 10vh;
+    font-size: 1.1rem;
+    line-height: 2.5;
+}
+
+.skill__desc .education_1 div, .experience_1 div, .license_1 div, .skills_1 div{
+    margin-bottom: 1.5vw; /* 각 줄 사이에 10px 간격을 추가합니다 */
+    font-size: 1vw; /* 기본 글꼴 크기 설정 (필요에 따라 조정 가능) */
+    line-height: 1.5; /* 줄 간 간격 설정 */
+    font-family: var(--mainKor-font); /* 원하는 폰트 적용 (필요에 따라 조정 가능) */
+    color: var(--black); /* 글꼴 색상 적용 */
+}
+
+/* 마지막 요소의 하단 여백을 제거 */
+.skill__desc .education_1 div:last-child, .experience_1 div:last-child, .skills_1 div:last-child, .license_1 div:last-child{
+    margin-bottom: 100px;
 }

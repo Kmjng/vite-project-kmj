@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://websfont.github.io/nanumSquareNeo/nanumSquareNeo.css");
 @import url("https://websfont.github.io/gmarket/gmarket.css");
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("../fonts/NotoSansKR-Regular.ttf") format("truetype");
+}
 
 .mont {
     font-family: "Montserrat";
@@ -10,4 +14,7 @@
 }
 .gmarket {
     font-family: "gmarket";
+}
+.noto {
+    font-family: "NotoSansKR";
 }
