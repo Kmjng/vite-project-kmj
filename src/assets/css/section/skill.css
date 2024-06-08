@@ -5,9 +5,9 @@
 }
 .skill__title {
     position: sticky;
-    top: 70px;
+    top: 70px; /* 위치 */ 
     left: 0; /* 왼쪽 */ 
-    width: 30%;
+    width: 30%; /* 위치 */ 
     height: 5vw;
     font-size: 4vw;
     font-weight: 900;
@@ -19,7 +19,7 @@
     margin-bottom: 10px;
 }
 .skill__title em {
-    font-size: 1.25rem;
+    font-size: 2vw;
     font-weight: 400;
     line-height: 2;
 }
@@ -43,7 +43,7 @@
     margin-bottom: 1vw;
 }
 .skill__desc h4 {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     text-decoration: underline;
     text-underline-position: under;
     margin-bottom: 2vw;
@@ -56,7 +56,7 @@
 
 .skill__desc .education_1 div, .experience_1 div, .license_1 div, .skills_1 div{
     margin-bottom: 1.5vw; /* 각 줄 사이에 10px 간격을 추가합니다 */
-    font-size: 1vw; /* 기본 글꼴 크기 설정 (필요에 따라 조정 가능) */
+    font-size: 2vw; /* 기본 글꼴 크기 설정 (필요에 따라 조정 가능) */
     line-height: 1.5; /* 줄 간 간격 설정 */
     font-family: var(--mainKor-font); /* 원하는 폰트 적용 (필요에 따라 조정 가능) */
     color: var(--black); /* 글꼴 색상 적용 */

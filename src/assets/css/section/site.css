@@ -1,3 +1,4 @@
+/* 2024.06. 기준 사용하지 않음 */
 .site__inner {
     padding: 16px;
 }
@@ -38,14 +39,7 @@
     background-color: var(--subBg200);
     top: 200px;
 }
-.site__item.s3 {
-    background-color: var(--subBg300);
-    top: 220px;
-}
-.site__item.s4 {
-    background-color: var(--subBg400);
-    top: 240px;
-}
+
 .site__item .num {
     font-size: 5vw;
     line-height: 1;
@@ -58,6 +52,8 @@
 .site__item .text {
     text-align: center;
     margin-bottom: 1rem;
+
+    
 }
 .site__item .text > div {
     font-size: 3vw;
@@ -66,6 +62,7 @@
     text-transform: uppercase;
     text-decoration: underline;
     font-family: var(--mainEng-font);
+    margin-bottom: 0.5rem;
 }
 .site__item .title {
     font-family: var(--mainKor-font);
@@ -74,7 +71,7 @@
 .site__item .btn a {
     text-decoration: underline;
     text-transform: uppercase;
-    color: var(--black200);
+    color: var(--black100);
     font-size: 1rem;
     transition: all 0.3s;
 }
@@ -115,12 +112,7 @@
     .site__item.s2 {
         top: 160px;
     }
-    .site__item.s3 {
-        top: 180px;
-    }
-    .site__item.s4 {
-        top: 200px;
-    }
+
     .site__item .num {
         font-size: 80px;
         left: 20px;

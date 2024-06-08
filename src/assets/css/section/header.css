@@ -3,7 +3,7 @@
     left: 0; 
     top : 0 ; 
     width : 100% ;
-    z-index : 10000 ; /* 제일 높이 */  
+    z-index : 10000 ; 
 
 }
 .header__inner {
