@@ -5,7 +5,7 @@
 }
 .skill__title {
     position: sticky;
-    top: 70px; /* 위치 */ 
+    top: 75px; /* 위치 */ 
     left: 0; /* 왼쪽 */ 
     width: 30%; /* 위치 */ 
     height: 5vw;
