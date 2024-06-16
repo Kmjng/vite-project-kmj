@@ -1,5 +1,15 @@
 #contact {
-    height: 100vh;
+    position: absolute;
+    top: 50%; /* 부모 요소의 세로 중앙에서 위로 50% */
+    left: 50%; /* 부모 요소의 가로 중앙에서 오른쪽으로 50% */
+    transform: translate(-50%, -50%); /* 자신의 너비와 높이의 절반만큼 이동하여 정확한 가운데 정렬 */
+    width: 80%; /* intro의 너비 설정 */
+    max-width: 1800px; /* 최대 너비 설정 */
+    height: 50vh; /* intro의 높이를 화면 높이의 50%로 설정 */
+    padding: 20px; /* 내부 여백 설정 */
+    background-color: skyblue; /* 배경색 설정 */
+    z-index: 2; /* intro가 background 위에 오도록 z-index 설정 */
+    display: flex; /* 내부 요소들을 행으로 배치하기 위해 추가 */
 }
 .contact__inner {
     width: 100%;

@@ -1,80 +1,46 @@
 #footer {
+    display: block;
     font-family: var(--mainKor-font);
+    font-size : 2rem;
 }
 .footer__inner {
-    padding: 16px;
+    padding: 10px;
 }
-.footer__text {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    border-top: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-    display: flex;
-    justify-content: space-between;
-}
+
 .footer__info {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
-}
-.footer__info .right {
-    width: 40%; /* 자동으로 왼쪽 40% 배치 */ 
-}
-.footer__info .right .title {
-    border-top: 2px solid var(--black);
-    border-bottom: 2px solid var(--black);
-    font-size: 1.5vw; /* social 폰트 크기 */ 
-    font-weight: 700;
-    margin-bottom: 15px; 
-    padding-top: 15px;   /* 라인 간격 */
-    padding-bottom: 15px;  /* 라인 간격 */
-}
-
-
-.footer__info .right .title:hover {
-    background-color: var(--black400);
-    padding-left: 10px;
-    border-color: transparent;
     
 }
+.footer__info {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    justify-content: space-between; /* 내부 요소들을 좌우 정렬 */
+    margin: 40px 0;
+}
 
-.footer__info .left {
-    width: 50%; /* 오른쪽 50% 배치 */ 
-}
-.footer__info .left h3 {
-    border-top: 2px solid var(--black);
-    font-size: 1.5vw; /* social 폰트 크기 */ 
-    font-weight: 700;
-    margin-bottom: 15px;
-    padding-top: 15px;
-    padding-bottom: 1px;
-}
-.footer__info .left ul {
-    border-top: 1px solid var(--black);
-}
-.footer__info .left li {
-    border-bottom: 1px solid var(--black);
-}
-.footer__info .left li a {
-    padding: 14px 0;
-    font-size: 1.5vw;
-    display: inline-block;
-    text-transform: uppercase;
-}
-.footer__info .left li em {
-    font-size: 12px;
-    padding-left: 10px;
-    opacity: 0;
-    transition: all 0.3s;
-}
-.footer__info .left li:hover em {
-    opacity: 1;
-    font-size: 1vw;
 
+.left-side {
+    width: 50%; /* 자동으로 왼쪽 50% 배치 */ 
+    flex: 1; /* 좌측 영역이 남은 공간을 모두 차지하도록 설정 */
+    font-size: 1em; 
 }
-.footer__right { /* 맨 밑 */ 
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1vw;
-    margin-bottom: 20px;
+
+.right-side {
+    
+    display: flex;
+    flex-direction: row; /* 우측 영역을 가로로 나열 */
+    flex: 1; /* 우측 영역이 남은 공간을 모두 차지하도록 설정 */
+}
+
+.right-row {
+    flex: 1; /* 각 우측 컬럼이 세로 방향으로 남은 공간을 모두 차지하도록 설정 */
+    margin: 0 10px; /* 각 컬럼 사이의 여백 설정 */
+}
+
+.right-side .right-row span {
+    font-size: 1.2em; /* 큰 글씨 사이즈 */
+}
+
+.right-side .right-row .contact-info {
+    font-size: 1em; /* 작은 글씨 사이즈 */
 }

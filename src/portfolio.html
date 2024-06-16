@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="김민정의 포트폴리오 입니다."/>
+    <meta name="keyword" content="KMJng" />
+    <title>🦉 KMJng's Resume</title>
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    
+</head>
+<body>
+    <header id = 'header' role = 'banner' >
+        <div class = "header__inner">
+            <div class = "header__logo">
+                <h1> <a href="#">KMJng<em>PortFolio</em></a> <!-- PortFolio vite-->
+                </h1>
+            </div>
+            <nav class="header__nav show">
+                <ul>
+                    <li> <a href="index.html"> intro </a></li> <!-- header__inner 꾸밈 받음-->
+                    <li> <a href="resume.html"> resume </a></li>
+                    <li> <a href="portfolio.html"> portfolio </a></li>
+                    <li> <a href="contact.html"> contact </a></li>
+                </ul>
+            </nav>
+            <!-- 모바일용 -->
+            <div 
+                class = "header__nav__mobile" id = "headerToggle" 
+                aria-controls = "primary-menu" aria-expanded ="false" 
+                role = "button" tabindex = "0">
+                <span></span>
+            </div>
+            
+        </div>
+    </header>
+    <!-- // header -->
+    <main id = 'main' role = "main">
+        <section id = 'background'>
+            <div class="background"></div>
+                <div class="background2"></div>
+        </section>
+        <section id = 'portfolio'>
+            <div class="port__inner">
+                <div class="port__title">
+                    portfolio <em>분석 작업물</em>
+                </div>
+                <div class="port__wrap">
+                    <article class="port__item p1">
+                        <span class="num">WORK 01.</span>
+                        <a href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=10826" target="_blank" class="img">
+                            <img src="assets/img/port01.jpg" alt="제 10회 2024년 보건의료빅데이터 활용 창업경진대회(참가)" />
+                        </a>
+                        <h3 class="title">분류모델링 기법 활용 비만 진단 모델</h3>
+                        <p class="desc">
+                            분석 관하여 몇줄 요약
+                        </p>
+                        <a href="/assets/documents/분류모델링을 통한 비만판별모델.pdf" target="_blank" class="site">📑 PPT 보기</a>
+                        <a href="https://github.com/Kmjng/BodyFat-Predict" target="_blank" class="code">
+                            <img src="assets/img/git.svg" alt="GitHub 아이콘">
+                            <span>Code 보기</span>
+                        </a>
+                    </article>
+                    <article class="port__item p2">
+                        <span class="num">WORK 02.</span>
+                        <a href="https://github.com/seolhee313/PORTFOLIO-REACT" class="img" target="_blank">
+                            <img src="assets/img/port02.jpg" alt="부제목" />
+                        </a>
+                        <h3 class="title">--</h3>
+                        <p class="desc">
+                            내용을 입력하세요.
+                        </p>
+                        <a href="https://portfolio-313.web.app/" target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    
+                </div>
+            </div>
+        </section>    
+        <!-- //port -->
+    </main>
+    <script type="module" src="/assets/js/main.js"></script>
+    
+</body>
+</html>

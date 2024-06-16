@@ -1,0 +1,81 @@
+#resume{
+    position: absolute;
+    top: 50%; /* 부모 요소의 세로 중앙에서 위로 50% */
+    left: 50%; /* 부모 요소의 가로 중앙에서 오른쪽으로 50% */
+    transform: translate(-50%, -50%); /* 자신의 너비와 높이의 절반만큼 이동하여 정확한 가운데 정렬 */
+    width: 80%; /* intro의 너비 설정 */
+    max-width: 1800px; /* 최대 너비 설정 */
+    height: 50vh; /* intro의 높이를 화면 높이의 50%로 설정 */
+    padding: 20px; /* 내부 여백 설정 */
+    background-color: skyblue; /* 배경색 설정 */
+    z-index: 2; /* intro가 background 위에 오도록 z-index 설정 */
+    display: flex; /* 내부 요소들을 행으로 배치하기 위해 추가 */
+}
+.resume__inner {
+    padding: 16px; /* 내부 콘텐츠와 경계(여기서는 안쪽 여백) 사이의 공간을 설정*/
+    display: flex;
+    justify-content: space-between;
+}
+.resume__title {
+    position: sticky;
+    top: 75px; /* 위치 */ 
+    left: 0; /* 왼쪽 */ 
+    width: 30%; /* 위치 */ 
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
+    border-bottom: 0.4vw solid var(--black100);
+    margin-bottom: 10px;
+}
+.resume__title em {
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 2;
+}
+.resume__desc {
+    width: 60%;
+}
+.resume__desc span {
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: 700;
+    line-height: 1.3;
+    font-family: var(--mainNoto-font);
+
+}
+
+
+.resume__desc h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 1vw;
+}
+.resume__desc h4 {
+    font-size: 2.5vw;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 2vw;
+}
+.resume__desc p {
+    margin-bottom: 10vh;
+    font-size: 1.1rem;
+    line-height: 2.5;
+}
+
+.resume__desc .education_1 div, .experience_1 div, .license_1 div, .skills_1 div{
+    margin-bottom: 1.5vw; /* 각 줄 사이에 10px 간격을 추가합니다 */
+    font-size: 2vw; /* 기본 글꼴 크기 설정 (필요에 따라 조정 가능) */
+    line-height: 1.5; /* 줄 간 간격 설정 */
+    font-family: var(--mainKor-font); /* 원하는 폰트 적용 (필요에 따라 조정 가능) */
+    color: var(--black); /* 글꼴 색상 적용 */
+}
+
+/* 마지막 요소의 하단 여백을 제거 */
+.resume__desc .education_1 div:last-child, .experience_1 div:last-child, .skills_1 div:last-child, .license_1 div:last-child{
+    margin-bottom: 100px;
+}

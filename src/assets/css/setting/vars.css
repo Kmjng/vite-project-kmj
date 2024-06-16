@@ -17,6 +17,12 @@
     --black300: #686868;
     --black400: #e0e0e0;
   
+    --subBu100: rgb(202,230,242);
+    --subBu200: rgb(111,185,220);
+    --subBu300: rgb(72,165,208);
+    --subBu400: rgb(33,144,197);
+    --subBu500: rgb(0,102,151);
+    
     /* 기본 폰트 설정 */
     font-family: var(--mainEng-font), var(--mainKor-font);
     font-size: 16px;
@@ -42,5 +48,5 @@
 
 body {
     color: var(--black100);
-    background-color: var(--mainBg-color);
+    background-color: white;
 }

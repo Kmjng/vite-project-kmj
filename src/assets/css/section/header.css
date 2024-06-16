@@ -1,19 +1,20 @@
 #header{
+    display: block; 
     position : fixed;
     left: 0; 
     top : 0 ; 
     width : 100% ;
-    z-index : 10000 ; /* 제일 높이 */  
+    /* z-index : 1000 ;  제일 높이 */  
 
 }
 .header__inner {
     display : flex ;
     align-items : center; /* 위아래 기준 가운데 정렬 */ 
     justify-content : space-between ; 
-    background-color: rgba(116, 99, 99, 1);
+    background-color: rgb(0,102,151);
     backdrop-filter: blur(15px);
-    padding : 1rem; /* 위아래 간격 (16px) */ 
-    
+    padding : 3rem; /* 위아래 간격 (16px) */ 
+    color: white;
     
 }
 .header__logo {
@@ -25,7 +26,7 @@
 
 }
 .header__logo em{
-    font-size: 15px; /* KMJng vite */ 
+    font-size: 1.2rem; /* KMJng vite */ 
     display: block; 
     color : white ; 
 }
@@ -47,7 +48,7 @@ h1 {
 }
 .header__nav li a {
     text-transform: uppercase; /* intro skill site ... */ 
-    font-size : 14px; 
+    font-size : 2rem; 
     padding : 14px; /* 좌우 간격 */
     position : relative ; 
 }
@@ -56,13 +57,13 @@ h1 {
     content: '';
     width: calc(100% - 28px); 
     height : 1px; 
-    background-color: var(--black) ;
+    background-color: var(--white) ;
     position: absolute ; 
     left: 14px ; 
     bottom : 10px ;  
     transform: scaleX(0); /* 안보이게 */   
     transition: all 0.3s ; /* 0.3초 delay 효과 */ 
-
+    
 }
 .header__nav li a:hover::before{
     transform: scaleX(1); 

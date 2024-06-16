@@ -1,0 +1,25 @@
+#background {
+    display: flex; 
+    height: 90vh;
+    z-index : 1;
+}
+.background {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--subBu100); 
+}
+.background2 {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 16px;
+    background-color: white; 
+}

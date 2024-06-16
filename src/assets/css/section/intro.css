@@ -1,157 +1,62 @@
 #intro {
-    height: 70vh;
-}
-.intro__inner {
-    width: 100%;
-    height: 95%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 16px;
-}
-.intro__title {
-    position: sticky;
-    top: 80px; /* 위치 */ 
-    left: 0; /* 왼쪽 */ 
-    width: 30%; /* 위치 */ 
-    height: 5vw;
-    font-size: 4vw;
-    font-weight: 900;
-    line-height: 1.6;
-    font-family: var(--mainKor-font);
-    text-transform: uppercase;
-    color: var(--black100);
-    border-bottom: 0.4vw solid var(--black100);
-    margin-bottom: 10px;
-}
-.intro__title em {
-    font-size: 2vw;
-    font-weight: 400;
-    line-height: 2;
-}
-.intro__text {
-    width: 70%;
-    margin: 0 auto;
-    height: 40vh;
-    background-color: var(--subBg100); /* 배경 색 */ 
+
+    position: absolute;
+    top: 50%; /* 부모 요소의 세로 중앙에서 위로 50% */
+    left: 50%; /* 부모 요소의 가로 중앙에서 오른쪽으로 50% */
+    transform: translate(-50%, -50%); /* 자신의 너비와 높이의 절반만큼 이동하여 정확한 가운데 정렬 */
+    width: 80%; /* intro의 너비 설정 */
+    max-width: 1800px; /* 최대 너비 설정 */
+    height: 50vh; /* intro의 높이를 화면 높이의 50%로 설정 */
     padding: 20px; /* 내부 여백 설정 */
-    color: var(--black); /* 글꼴 색 */ 
+    background-color: blue; /* 배경색 설정 */
+    z-index: 2; /* intro가 background 위에 오도록 z-index 설정 */
+    display: flex; /* 내부 요소들을 행으로 배치하기 위해 추가 */
+
+}
+
+.inner__left {
+    flex-grow: 1;
     display: flex;
-    /* align-items: flex-start; /* 가운데 정렬 */ 
-    justify-content: center; 
     flex-direction: column;
-    position: relative;
-    font-family: var(--mainNoto-font);
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* 텍스트를 가운데 정렬하기 위해 추가 */
+    color: white; /* 내용의 글자색 설정 */
+}
+
+.inner__right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* 텍스트를 가운데 정렬하기 위해 추가 */
+    color: white; /* 내용의 글자색 설정 */
+}
+
+.inner__right p {
+    margin-bottom: 10px; /* 단락 사이의 간격 설정 */
+    font-size: 24px; /* 기본 글자 크기 설정 */
+}
+
+.inner__right .title {
+    font-size: 32px; /* 제목 글자 크기 설정 */
+    font-weight: bold; /* 제목 글자 굵기 설정 */
 }
 
 
-.intro__text .text {
-    float : right ;
-    
-    font-size: 2.4vw;
-    line-height: 1;
-    font-weight: 700;
-    
 
-    margin-left: auto; /* 위치 */
-    margin-right: 30px; /* 위치 (왼쪽으로 20px만큼 이동)  */
-    
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5%;
-    
-    z-index: 100;
-    transition: all 0.3s;
-    
-}
-.intro__text .text div {
-    line-height: 1.5; /* 텍스트 간격을 조절할 값 */
-}
-
-
-.intro__text .img {
-    float : left ; /* 이미지를 왼쪽으로 띄움*/ 
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-    width: 25vh;
-    height: 25vh;
-
-    border-radius: 60%;
-    overflow: hidden; 
-    
-    transition: all 0.3s;
-}
-/* 마우스 커서 효과 */ 
-.intro__text:hover .text {
-    opacity: 0;
-}
-.intro__text:hover .img {
-    filter: grayscale(0);
-}
-
-
-/* 커서 올리면 보이는 텍스트 */ 
-.intro__text .additional-text {
-    display: none; /* 일단 숨김 */
-    
-    float: right;
-    
-    font-size: 2vw;
-    line-height: 1;
-    font-weight: 700;
-
-    margin-left: auto; /* 위치 */
-    margin-right: 30px; /* 위치 (왼쪽으로 30px만큼 이동) */
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10% ;
-    
-    z-index: 100;
-    transition: all 0.3s;
+.inner__right .btn {
+    padding: 10px 20px;
+    background-color: pink; /* btn1의 배경색 */
+    color: white; /* btn1의 글자색 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    border-radius: 5px; /* btn1 모서리 둥글게 */
     
 }
-.intro__text .additional-text {
-    line-height: 1.5; /* 텍스트 간격을 조절할 값 */
-}
-
-
-.intro__text:hover .additional-text {
-    display: block; /* 마우스를 올렸을 때 보이도록 함 */
-}
-
-
-@media (max-width: 800px){
-    .intro__inner {
-        justify-content: center;
-    }
-    .intro__text .text {
-        font-size: 24px;
-    }
-}
-@media (max-width: 320px){
-    .intro__title {
-        display: none;
-    }
-}
 
 
 
-.img-comma {
-    display: none; /* 일단 숨김 */
-    width: 150px; /* 원하는 너비 */
-    height: 150px; /* 원하는 높이 */
-    position: absolute; /* 위치를 조절하기 위해 절대 위치 설정 */
-    top: 30px; /* 원하는 상단 여백 */
-    right: 40px; /* 원하는 우측 여백 */
-    transform: scale(0.5); /* 크기 조절 */
-}
-
-.intro__text:hover .img-comma {
-    display: block; /* 마우스를 올렸을 때 보이도록 함 */
+.inner__right .btn:hover {
+    background-color: #2980b9; /* 마우스 오버시 배경색 변경 */
 }

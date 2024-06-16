@@ -4,11 +4,13 @@ import { link } from "./link.js";
 import { smooth } from "./smooth.js";
 
 
-
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
     menu();
     port();
     link();
     smooth();
+    
+
+    
 
 });

@@ -9,13 +9,14 @@
 
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
     <link rel="stylesheet" href="/assets/css/style.css" />
+    
 </head>
 <body>
     <div id="skip">
         <a href = '#header'> 헤더 영역 바로 가기</a>
         <a href = '#intro'> 소개 영역 바로 가기</a>
-        <a href = '#skill'> 프로필 영역 바로 가기</a>
-        <a href = '#port'> 포트폴리오 영역 바로 가기</a>
+        <a href = '#resume'> 이력서 영역 바로 가기</a>
+        <a href = '#portfolio'> 포트폴리오 영역 바로 가기</a>
         <a href = '#contact'> 연락 영역 바로 가기</a>
         <a href = '#footer'> 푸터 영역 바로 가기</a>
     </div>
@@ -28,11 +29,10 @@
             </div>
             <nav class="header__nav show">
                 <ul>
-                    <li> <a href="#intro"> intro </a></li> <!-- header__inner 꾸밈 받음-->
-                    <li> <a href="#skill"> profile </a></li>
-                    <li> <a href="#port"> portfolio </a></li>
-                    <li> <a href="#contact"> contact </a></li>
-                    
+                    <li> <a href="index.html"> intro </a></li> <!-- header__inner 꾸밈 받음-->
+                    <li> <a href="resume.html"> resume </a></li>
+                    <li> <a href="portfolio.html"> portfolio </a></li>
+                    <li> <a href="contact.html"> contact </a></li>
                     
                 </ul>
             </nav>
@@ -49,179 +49,66 @@
     <!-- // header -->
     
     <main id = 'main' role = "main">
+        <section id = 'background'>
+            <div class="background"></div>
+                <div class="background2"></div>
+        </section>
         <section id = 'intro'>
-            <div class="intro__inner">
-                <h1 class="intro__title">
-                    About me<em>소개</em>
-                </h1>
+            <div class="inner__left">
+                Minjeong <br />
+                Kim
+            </div>
+            <div class="inner__right">
+                <p class="title">HELLO</p>
+                <a href="resume.html" class="btn">Go back to resume Page</a>
+                <a href="portfolio.html" class="btn">Go back to portfolio Page</a>
                 
-                <div class="intro__text">
-                    <div class="text">
-                        <div>BIRTH: 1996.07.12</div>
-                        <div>ADDRESS: 경기도 성남시 분당구</div>
-                        <div>TEL: +82-10-7263-1963</div>
-                        <div>EMAIL: kmjng0712@gmail.com</div>
-                    </div>
-                    <div class="additional-text">
-                        <div>안녕하세요.</div>
-                        <div>데이터가 궁금한 Data Analyst입니다.</div>
-                        <div>바다에서 그물로 물고기를 잡듯이</div>
-                        <div>데이터 바다속에서 좋은 그물이 되어 </div>
-                        <div>Insight를 가져오고자 합니다.</div>
-                    </div>
-                    <div class="img-comma">
-                        <img src="/assets/img/comma1.png" alt="Comma Image"></div>
-                    <div class="img">
-                        <img src="assets/img/aboutme.svg" alt="ME" />
-                    </div>
-                </div>
-                <div class="intro__lines bottom" aria-hidden="true">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
+                
+                <br />
+                <p>내 소개</p>
+                
             </div>
-        </section>
-        <!-- //intro -->
-        <section id = 'skill'>
-            <div class="skill__inner">
-                <h2 class="skill__title">PROFILE <em>프로필</em></h2>
-                <div class="skill__desc">
-                    <div class = "education">
-                        <span><h4>ACADEMIC</h4></span>
-                        <div class="education_1">
-                            <div>🏫 2024.02.~ 2024.08. ITWILL 빅데이터 준전문가 45기 </div>
-                            <div>🏫 2021.03.~ 2023.02. 건국대학교 물리학과 석사 (졸업)</div>
-                            <div>🏫 2018.03.~ 2021.02. 건국대학교 물리학과 학사 (졸업)</div>
-                            <div>🏫 2015.03.~ 2018.02. 한성대학교 전자정보공학과 (중퇴)</div>
-                            <div>🏫 2012.03.~ 2015.02. 판교고등학교 (前 삼평) (졸업)</div>
-                        </div>
-                    </div>
-                    <div class = "experience">
-                        <span><h4>EXPERIENCE</h4></span>
-                        <div class="experience_1">
-                            <div>🏢 2023.03.~2023.11. A Barristor Company (석사후연구원) </div>
-                        </div>
-                    </div>
-                    <div class = "license">
-                        <span><h4>LICENSE</h4></span>
-                        <div class="license_1">
-                            <div>📖 2024.03. 데이터분석 준전문가(ADsP) - 취득 </div>
-                            <div>📖 2024.04. SQL 개발자(SQLD)  - 합/불합 미결정  </div>
-                            <div>📖 2024.06. 빅데이터분석기사 - (현) 필기합격 </div>
-                        </div>
-                    </div>
-                    <div class = "skills">
-                        <h4>SKILLS</h4>
-                        <div class="skills_1">
-                            <div>📊 Python/R </div>
-                            <div>📊 SQL (Oracle, MariaDB)  </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- //skill -->
-            
 
-        <section id = 'port'>
-            <div class="port__inner">
-                <div class="port__title">
-                    portfolio <em>분석 작업물</em>
-                </div>
-                <div class="port__wrap">
-                    <article class="port__item p1">
-                        <span class="num">WORK 01.</span>
-                        <a href="https://www.hira.or.kr/bbsDummy.do?pgmid=HIRAA020002000100&brdScnBltNo=4&brdBltNo=10826" target="_blank" class="img">
-                            <img src="assets/img/port01.jpg" alt="제 10회 2024년 보건의료빅데이터 활용 창업경진대회(참가)" />
-                        </a>
-                        <h3 class="title">분류모델링 기법 활용 비만 진단 모델</h3>
-                        <p class="desc">
-                            분석 관하여 몇줄 요약
-                        </p>
-                        <a href="/assets/documents/분류모델링을 통한 비만판별모델.pdf" target="_blank" class="site">📑 PPT 보기</a>
-                        <a href="https://github.com/Kmjng/BodyFat-Predict" target="_blank" class="code">
-                            <img src="assets/img/git.svg" alt="GitHub 아이콘">
-                            <span>Code 보기</span>
-                        </a>
-                    </article>
-                    <article class="port__item p2">
-                        <span class="num">WORK 02.</span>
-                        <a href="https://github.com/seolhee313/PORTFOLIO-REACT" class="img" target="_blank">
-                            <img src="assets/img/port02.jpg" alt="부제목" />
-                        </a>
-                        <h3 class="title">--</h3>
-                        <p class="desc">
-                            내용을 입력하세요.
-                        </p>
-                        <a href="https://portfolio-313.web.app/" target="_blank" class="site">사이트 보기</a>
-                    </article>
-                    
-                </div>
-            </div>
-    
         </section>
-        <!-- //port -->
-        <section id = 'contact'>
-            <div class="contact__inner">
-                <h2 class="contact__title">Contact<em>연락처</em></h2>
-                <div class="contact__text">
-                    <div class="text">
-                        <div>
-                            <a href="mailto:webstoryboy@naver.com" target="_blank"> 
-                                <img src="assets/img/email.svg" alt="Email Icon" class="email-icon">
-                                To. kmjng0712@gmail.com
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-        </section>
-        <!-- //contact -->
-        
+        <!-- //background -->
     </main>
     <!-- // main -->
     
     <footer id = 'footer' role = "contentinfo">
         <div class="footer__inner">
-            <div class="footer__text">
-                <span>KMJng</span>
-                <span>© portfolio</span>
-            </div>
             <div class="footer__info">
-                
-                <div class="left">
-                    <h3>SOCIAL</h3>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/Kmjng" target="_blank">github</a>
-                            <em>IT 관련 공부 깃허브 입니다. (✍️23.12.~)</em>
-                        </li>
-                        <li>
-                            <a href="https://hellomars.tistory.com/" target="_blank">tistory</a>
-                            <em>데이터 분석 관련 블로그입니다. (✍️24.02.~)</em>
-                        </li>
-                        
-                    </ul>
+                <div class="left-side">
+                    © 2024 by Minjeong Kim.<br />
+                    VITE based
                 </div>
-                <div class="right">
-                    <div class="title">
-                        <a href="#">GO TO HOME 🪹</a>
+                    <div class="right-side">
+                        <div class="right-row">
+                            <span>Call</span>
+                            <div class="contact-info">
+                                <p>010-7263-1963</p>
+                            </div>
+                        </div>
+                        <div class="right-row">
+                            <span>E-mail</span>
+                            <div class="contact-info">
+                                <p>kmjng0712@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="right-row">
+                            <span>Site</span>
+                            <div class="contact-info">
+                                <p>git</p>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-            </div>
-            <div class="footer__right">
-                © 2024 KMJng<br />
-                VITE based
-            </div>
+                
+                
+        
         </div>
     </footer>
     <!-- //footer -->
     
     <script type="module" src="/assets/js/main.js"></script>
+    
 </body>
 </html>
