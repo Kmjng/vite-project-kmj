@@ -1,67 +1,71 @@
-#portfolio {
+#header { 
+    position: fixed;
+    z-index: 1000; /* 다른 요소들보다 위에 보이도록 설정 */
+    }
+#main {
+    padding-top: 80px; /* header가 fixed로 인해 화면 위에 겹쳐지므로 내용이 header 아래에 표시될 수 있도록 추가 패딩 설정 */
+}
+
+#portfolio{
+    
     position: absolute;
-    top: 50%; /* 부모 요소의 세로 중앙에서 위로 50% */
+    top: 48%; /* 부모 요소의 세로 중앙에서 위로 50% */
     left: 50%; /* 부모 요소의 가로 중앙에서 오른쪽으로 50% */
     transform: translate(-50%, -50%); /* 자신의 너비와 높이의 절반만큼 이동하여 정확한 가운데 정렬 */
     width: 80%; /* intro의 너비 설정 */
     max-width: 1800px; /* 최대 너비 설정 */
     height: 50vh; /* intro의 높이를 화면 높이의 50%로 설정 */
     padding: 20px; /* 내부 여백 설정 */
-    background-color: skyblue; /* 배경색 설정 */
+    
     z-index: 2; /* intro가 background 위에 오도록 z-index 설정 */
-    display: flex; /* 내부 요소들을 행으로 배치하기 위해 추가 */
+    
+    flex-direction: column; /* 세로로 요소들을 배치 */
+    align-items: center; /* 가로 정렬을 가운데로 설정 */
 }
 .port__inner {
-    padding: 16px;
+    flex-direction: column;
+    height: 100%;
+    width : 100%;
+    padding: 16px; /* 내부 콘텐츠와 경계(여기서는 안쪽 여백) 사이의 공간을 설정*/
+    display: flex;
+    justify-content: space-between;
 }
-.port__title {
-    top: 20px; /* 위치 */ 
-    left: 0; /* 왼쪽 */ 
-    width: 45%; /* 위치 */ 
+.port__title{
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    font-size: 2.5rem; /* 글자 크기 조정 */
+    font-weight: bold; /* 글자 두껍게 설정 */
+    margin-bottom: 20px; /* 아래 여백 추가 */
+}
 
-    height: 5vw;
-    font-size: 4vw;
-    font-weight: 900;
-    line-height: 1.6;
-    font-family: var(--mainKor-font);
-    text-transform: uppercase;
-    color: var(--black100);
-    border-bottom: 0.4vw solid var(--black100);
-    margin-bottom: 16px;
-    text-indent: -0.26vw;
-}
 .port__title em {
     font-size: 2vw;
     font-weight: 400;
     line-height: 2;
 }
-.port__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    width: 7000px;
-}
-.port__item {
-    width: 700px;
-    height: 70vh;
-    background-color: var(--subBg100);
-    padding: 2.5rem;
-    margin-right: 20px;
-}
+
+
 .port__item.p1 {
-    background-color: var(--subBg100);
+    margin-top : 20px;
+    background-color: var(--subBu300);
+    color: #ffffff; /* 흰색 글씨 */
+    padding: 10px; /* 내부 여백 */
+    margin-bottom: 80px; /* 아래 여백 */
 }
 .port__item.p2 {
-    background-color: var(--subBg200);
+    background-color: var(--subBu300);
 }
 
 
-.port__item .num {
-    font-size: 2rem;
-    font-family: var(--mainNum-font);
+.num {
+    text-align: left; /* 텍스트를 가운데 정렬 */
+    font-size: 1.5rem; /* 글자 크기 조정 */
+    font-weight: bold; /* 글자 두껍게 설정 */
+    margin-top: 20px; /* 위 여백 추가 */
+    margin-bottom: 10px; /* 아래 여백 추가 */
 }
 .port__item .img {
     display: block;
-    margin-top: -10px;
+    
     transition: margin-top 0.3s;
     font-size : 20px; 
 }
@@ -88,21 +92,23 @@
 .port__item .desc {
     font-size: 1.5rem;
 }
-.port__item .site {
+.port__item .site {  /* PPT 보기 */
     border: 1px solid var(--black100);
     display: block;
     text-align: center;
-    padding: 0.8rem 1.5rem; /*(상하 0.625rem, 좌우 1.5rem)*/
-    margin-top: 2rem; /* 위쪽 여백을 1.5rem으로 설정 */
+    padding:0.8rem 1.5rem;  /*(상하 0.625rem, 좌우 1.5rem)*/
+    margin-top: 4rem; /* 위쪽 여백을 1.5rem으로 설정 */
     font-size : 1.5rem; 
+    
 }
-.port__item .code {
-    border: 1px solid var(--black100);
+.port__item .code { /* Code 보기 */
     display: block;
+    border: 1px solid var(--black100);
     text-align: center;
     padding:0.8rem 1.5rem; 
     margin-top: 2rem;
     font-size : 1.5rem; 
+    margin-bottom: 3rem;
 }
 .port__item .code span {
     margin-right: 0.5rem; /* 텍스트와 이미지 사이의 간격 조절 */
