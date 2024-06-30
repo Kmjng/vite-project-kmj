@@ -1,5 +1,5 @@
 # 포트폴리오 사이트 
->> [vite](https://github.com/webstoryboy/port2023-vite)를 이용하여 사이트를 제작햿습니다.
+> [vite](https://github.com/webstoryboy/port2023-vite)를 이용하여 사이트를 제작했습니다.
 
 
 ## 프로젝트 실행
