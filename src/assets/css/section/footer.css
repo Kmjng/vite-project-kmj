@@ -29,7 +29,6 @@
 }
 
 .right-side {
-    
     display: flex;
     flex-direction: row; /* 우측 영역을 가로로 나열 */
     flex: 1.2; /* 우측 영역이 남은 공간을 모두 차지하도록 설정 */
@@ -38,10 +37,14 @@
 .right-row {
     flex: 1; /* 각 우측 컬럼이 세로 방향으로 남은 공간을 모두 차지하도록 설정 */
     margin: 0 10px; /* 각 컬럼 사이의 여백 설정 */
+    font-size: 0.6rem;
+    align-content: center;
 }
 
 .right-side .right-row span {
-    font-size: 1.6em; /* 큰 글씨 사이즈 */
+    font-size: 1.6em;
+    padding: 0.1rem 1rem;
+    border-right: 0.2rem solid #e25252;
 }
 
 .right-side .right-row .contact-info {
@@ -53,12 +56,6 @@
     margin-left: 10px; /* div와 p 사이의 여백 설정 */
 }
 
-
-.v-line{
-    width: 2px; /* 세로 선의 너비 */
-    height: 35%; /* 세로 선의 높이를 부모 요소에 맞게 설정 */
-    background-color: red; /* 세로 선의 색상 */
-    display: inline-block; /* 인라인 블록 요소로 설정하여 텍스트와 나란히 배치 */
-    margin: -10px 10px; /* 세로 선 좌우 여백 설정 */
-    vertical-align: middle; /* 세로 정렬을 중앙으로 설정 */
+.footer-icons{
+    transform:translateY(-100%);
 }

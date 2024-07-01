@@ -4,8 +4,8 @@
     top: 50%; /* 부모 요소의 세로 중앙에서 위로 50% */
     left: 50%; /* 부모 요소의 가로 중앙에서 오른쪽으로 50% */
     transform: translate(-50%, -50%); /* 자신의 너비와 높이의 절반만큼 이동하여 정확한 가운데 정렬 */
-    width: 80%; /* intro의 너비 설정 */
-    max-width: 45vw ;  /* 최대 너비 설정 */
+    width: 40rem; /* intro의 너비 설정 */
+    /*max-width: 45vw ;   최대 너비 설정 */
     height: 50vh; /* intro의 높이를 화면 높이의 50%로 설정 */
     padding: 20px; /* 내부 여백 설정 */
     background-color: blue; /* 배경색 설정 */
@@ -49,6 +49,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px; /* 원하는 여백 설정 */
+    position: absolute;
 }
 
 .social-icons a {
